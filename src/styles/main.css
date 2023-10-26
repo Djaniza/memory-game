@@ -1,0 +1,117 @@
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    background: url("../images/backgrounMain.jpg");
+    background-size: cover;
+}
+
+.container {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 30px;
+    padding: 40px 60px;
+}
+
+h2 {
+    font-size: 1.5em;
+    color: #000;
+}
+
+.reset {
+    padding: 15px 20px;
+    width: 60%;
+    color: #000000;
+    border: none;
+    border-radius: 10px;
+    background-color: rgba(255, 255, 255, 0.562);
+    font-size: 1em;
+    text-transform: uppercase;
+    cursor: grab;
+    font-weight: 600;
+}
+
+.reset:focus {
+    color: #ec38bc;
+    background-color: #262809;
+}
+
+.game {
+    width: 650px;
+    height: 430px;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
+    transform-style: preserve-3d;
+    perspective: 500px;
+}
+
+.item {
+    position: relative;
+    width: 100px;
+    height: 160px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: #fff;
+    border-radius: 10px;
+    box-shadow: -1px -1px 27px 7px rgba(0,0,0,0.75);
+    font-size: 3em;
+    transform: rotateY(180deg);
+    transition-duration: 0.25s;
+}
+
+.item::after {
+    content: "";
+    position: absolute;
+    inset: 0;
+    background: url("../images/cardcover4.jpg");
+    background-size: cover;
+    border-radius: 10px;
+    transition: 0.25s;
+    transform: rotateY(0deg);
+    backface-visibility: hidden;
+}
+
+.item.boxOpen {
+    transform: rotateY(0deg);
+    transition: 0.25s;
+}
+
+.boxOpen::after, .boxMatch::after {
+    transform: rotateY(180deg);
+}
+
+.image0 {
+    background: url("../images/image0.jpg");
+    background-size: cover;
+}
+
+.image1 {
+    background: url("../images/image1.jpg");
+    background-size: cover;
+}
+
+.image2 {
+    background: url("../images/image2.jpg");
+    background-size: cover;
+}
+
+.image3 {
+    background: url("../images/image3.jpg");
+    background-size: cover;
+}
+
+.image4 {
+    background: url("../images/image4.jpg");
+    background-size: cover;
+}
+
+.image5 {
+    background: url("../images/image5.jpg");
+    background-size: cover;
+}

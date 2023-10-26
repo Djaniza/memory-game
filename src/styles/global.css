@@ -1,5 +1,7 @@
 * {
     margin: 0;
     padding: 0;
-    font-family: 'Italianno', cursive;
+    outline: none;
+    box-sizing: border-box;
+    font-family: 'Special Elite';
 }
